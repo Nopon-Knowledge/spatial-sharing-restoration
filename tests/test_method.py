@@ -96,7 +96,9 @@ def test_projection_orthogonality_identity_and_box_optimum(constant):
     py, _, _ = project_affine(x, y)
     np.testing.assert_allclose(np.sum((c-y)**2), np.sum((s-py)**2)+np.sum((d-(y-py))**2), rtol=1e-12)
     bounded, a, b = project_affine(x, c, bounded=True)
-    assert np.all((a >= math.exp(-.4)) & (a <= math.exp(.4)))
+    # NumPy exp and Python's libm exp can differ by one ULP across platforms.
+    tolerance = 2 * np.finfo(a.dtype).eps
+    assert np.all((a >= math.exp(-.4)-tolerance) & (a <= math.exp(.4)+tolerance))
     assert np.max(np.abs(b)) <= .1
     for ch in range(3):
         design = np.column_stack([x[ch].ravel(), np.ones(256)])
