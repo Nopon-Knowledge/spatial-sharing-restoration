@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="620" viewBox="0 0 1400 620" role="img" aria-labelledby="title desc">
+  <title id="title">When to Break Spatial Sharing</title>
+  <desc id="desc">A PyTorch research toolkit for state-guided restoration, shared-output decomposition, and bounded correction strength.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101e34"/><stop offset="1" stop-color="#080f1b"/></linearGradient>
+    <linearGradient id="accent"><stop stop-color="#72e5ce"/><stop offset="1" stop-color="#b5a5ff"/></linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#8eafcd" stroke-opacity=".055"/></pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1L8 5L0 9" fill="none" stroke="#738ca9" stroke-width="1.5"/></marker>
+  </defs>
+  <rect width="1400" height="620" rx="24" fill="url(#bg)"/>
+  <rect width="1400" height="620" rx="24" fill="url(#grid)"/>
+  <rect x="56" y="45" width="250" height="30" rx="15" fill="#72e5ce" fill-opacity=".10" stroke="#72e5ce" stroke-opacity=".3"/>
+  <g font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif">
+    <text x="74" y="65" fill="#92ebd9" font-size="12" font-weight="600" letter-spacing="1.5">RESEARCH CODE · PYTORCH</text>
+    <text x="56" y="153" fill="#f2f6fc" font-size="64" font-weight="700" letter-spacing="-2">When to Break</text>
+    <text x="56" y="226" fill="url(#accent)" font-size="64" font-weight="700" letter-spacing="-2">Spatial Sharing</text>
+    <text x="59" y="273" fill="#b1c3d9" font-size="20">Separate shared remapping from the correction that depends on location.</text>
+    <g transform="translate(1122 64)" fill="none" stroke-width="2">
+      <rect width="204" height="190" rx="18" fill="#152339" stroke="#29425a"/>
+      <g stroke="#314b65" stroke-width="1"><path d="M51 20V170M102 20V170M153 20V170M20 48H184M20 95H184M20 142H184"/></g>
+      <path d="M25 141C55 143 62 71 101 89S143 43 179 42" stroke="#b5a5ff" stroke-width="3"/>
+      <path d="M25 139L179 48" stroke="#72e5ce" stroke-width="2" stroke-dasharray="6 5"/>
+      <circle cx="101" cy="89" r="5" fill="#b5a5ff" stroke="#b5a5ff"/>
+      <text x="20" y="218" fill="#819ab6" font-size="11" stroke="none" letter-spacing="1">SHARED + SPATIAL</text>
+    </g>
+    <path d="M58 321H1342" stroke="#28384e"/>
+    <g>
+      <rect x="56" y="351" width="395" height="176" rx="14" fill="#13253a" stroke="#2c4960"/>
+      <text x="80" y="382" fill="#72e5ce" font-size="12" font-weight="700" letter-spacing="1.5">01 / RESTORE</text>
+      <text x="80" y="420" fill="#e7f0fa" font-size="24" font-weight="600">State-guided reconstruction</text>
+      <text x="80" y="453" fill="#a1b9d2" font-size="16">CBDE → RGL-DSE → DGRN → DSPC</text>
+      <text x="80" y="500" fill="#72e5ce" font-size="23">C = g ⊙ Y₀ + b</text>
+      <path d="M458 439H486" stroke="#738ca9" stroke-width="2" marker-end="url(#arrow)"/>
+      <rect x="500" y="351" width="378" height="176" rx="14" fill="#1c233b" stroke="#43496b"/>
+      <text x="524" y="382" fill="#b8adff" font-size="12" font-weight="700" letter-spacing="1.5">02 / DECOMPOSE</text>
+      <text x="524" y="420" fill="#e7f0fa" font-size="24" font-weight="600">Fit the shared component</text>
+      <text x="524" y="453" fill="#a1b9d2" font-size="16">Project the output; inspect its residual.</text>
+      <text x="524" y="500" fill="#b8adff" font-size="23">C = S* + D</text>
+      <path d="M886 439H914" stroke="#738ca9" stroke-width="2" marker-end="url(#arrow)"/>
+      <rect x="928" y="351" width="416" height="176" rx="14" fill="#172435" stroke="#35495e"/>
+      <text x="952" y="382" fill="#f4ca8f" font-size="12" font-weight="700" letter-spacing="1.5">03 / CONTROL</text>
+      <text x="952" y="420" fill="#e7f0fa" font-size="24" font-weight="600">Choose correction strength</text>
+      <text x="952" y="453" fill="#a1b9d2" font-size="16">Bounded fit + one image-wide strength.</text>
+      <text x="952" y="500" fill="#f4ca8f" font-size="23">Cλ = Sᴮ + λ(C − Sᴮ)</text>
+    </g>
+    <text x="58" y="575" fill="#8fa5be" font-size="13" letter-spacing=".4">RAIN / HAZE / SNOW</text>
+    <text x="1342" y="575" text-anchor="end" fill="#8fa5be" font-size="13">Reference implementation · explicit reproduction status</text>
+  </g>
+</svg>

@@ -1,0 +1,37 @@
+# Paper settings; see docs/IMPLEMENTATION.md for explicit engineering choices.
+device: cuda:0
+model:
+  backend: airnet
+  airnet_source: third_party/AirNet
+  variant: B2
+  state_supervision: both
+  mismatch: false
+  global_enabled: true
+  local_enabled: true
+  scales: [1, 2, 4]
+  downsample: 16
+  log_gain_bound: 0.4
+  bias_bound: 0.1
+data:
+  root: data/WeatherBench
+  train_manifest: data/manifests/train.csv
+  val_manifest: data/manifests/val.csv
+  test_manifest: data/manifests/test.csv
+training:
+  seed: 42
+  batch_size: 16
+  crop: 128
+  workers: 0
+  betas: [0.9, 0.999]
+  eps: 1.0e-8
+  weight_decay: 0.0
+  state_weight: 1.0
+  validation_limit: 128
+  validate_every: 500
+  encoder:
+    updates: 7500
+    lr: 0.001
+  joint:
+    updates: 54375
+    lr: 0.0001
+    min_lr: 0.000001

@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-11",
+  "active_manuscript": "main.tex",
+  "sources": {
+    "main.tex": "9d3848108b3c5aa2593bec325f6c271da0e3f8ad9ddb5b1d7fb68983531d39e3",
+    "sections/focused_method.tex": "90212132a080b2e98159018c4d040024c324076c90085d3f27e096b7167288d9",
+    "sections/focused_analysis.tex": "c8f40a989bfb8cd7675354f8531e4b8e784a92f8f59e88fb7474a6abca678813",
+    "sections/supplementary_materials.tex": "335e73253d8bc2c5aa4af3171dcde446e28d3a1fcdb18e9ddaf8f13d0748c283"
+  }
+}

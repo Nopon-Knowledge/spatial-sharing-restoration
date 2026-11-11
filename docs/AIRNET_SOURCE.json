@@ -1,0 +1,14 @@
+{
+  "url": "https://github.com/XLearning-SCU/2022-CVPR-AirNet.git",
+  "commit": "bedea82f7f7a71f135bcc026fd02ea9f2feaa710",
+  "scope": "Unmodified model source and upstream documentation only; no checkpoints or dataset samples",
+  "files": {
+    "net/deform_conv.py": "7feafd4da85da4d2e45e1ce905370bf52df63c3c2ad81a6966df0689e3f6bb9e",
+    "net/encoder.py": "2939ddd2c410877dc5a0d57d12575794a41b456f255767087ddecbd8fa93b383",
+    "net/model.py": "b2de1ec53001a001f4979ed48361d4c6d731865b56fa22866be864d1cdc1a60c",
+    "net/DGRN.py": "cd0e45ee51b335171452f6e7f77fe23db2a8eba62cd4cd9ada1cd0d7bbbaca64",
+    "net/moco.py": "39135ad2d839c84b8cc918f43f672cc8955caa3015e36b9a0266de2ba3d34260",
+    "README.md": "ddbb95c2b0724eaa0b3af1a10dbf7449eb942ed4939e2ef5fafa48801547c933",
+    "airnet.yaml": "b58d1c1a08b187279582f6b78a13f4664621ecd1b50f011d7575c2a1ee37e14e"
+  }
+}

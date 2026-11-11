@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite this repository and the original methods and datasets used in your experiments."
+type: software
+title: "Spatial Sharing Restoration: Output-Space Decomposition for Unified Adverse Weather Restoration"
+authors:
+  - name: "Nopon-Knowledge"
+version: 0.1.0
+date-released: 2026-11-11
+repository-code: "https://github.com/Nopon-Knowledge/spatial-sharing-restoration"
+url: "https://github.com/Nopon-Knowledge/spatial-sharing-restoration"
+license: MIT
+keywords:
+  - image restoration
+  - spatial sharing
+  - photometric correction
+  - adverse weather
+  - PyTorch

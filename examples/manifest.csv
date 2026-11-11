@@ -1,0 +1,4 @@
+id,scene,task,input,target
+train_rain_0001,scene_train_rain_0001,rain,rain/input/0001.png,rain/target/0001.png
+train_haze_0001,scene_train_haze_0001,haze,haze/input/0001.png,haze/target/0001.png
+train_snow_0001,scene_train_snow_0001,snow,snow/input/0001.png,snow/target/0001.png

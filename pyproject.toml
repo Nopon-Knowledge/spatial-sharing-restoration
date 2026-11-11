@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "symmetry-spatial-sharing"
+version = "0.1.0"
+description = "Reference implementation of output-space sharing for adverse weather restoration"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [{name = "Nopon-Knowledge"}]
+keywords = ["image-restoration", "pytorch", "photometric-correction", "adverse-weather", "spatial-sharing"]
+requires-python = ">=3.10"
+dependencies = ["torch>=2.2", "numpy>=1.24,<2", "Pillow>=10", "PyYAML>=6", "scipy>=1.10", "scikit-image>=0.22"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+perceptual = ["lpips>=0.1.4", "torchvision>=0.17"]
+
+[project.scripts]
+symmetry = "spatial_sharing.cli:main"
+
+[project.urls]
+Repository = "https://github.com/Nopon-Knowledge/spatial-sharing-restoration"
+Issues = "https://github.com/Nopon-Knowledge/spatial-sharing-restoration/issues"
+
+[tool.setuptools.packages.find]
+include = ["spatial_sharing*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

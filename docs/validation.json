@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-11",
+  "python": "3.10.20",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "device": "cpu",
+  "packages": {
+    "torch": "2.14.1",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "scikit-image": "0.25.2",
+    "Pillow": "12.3.0",
+    "PyYAML": "6.0.3",
+    "pytest": "9.2.0"
+  },
+  "pytest": {
+    "tests": "22",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "3.529"
+  },
+  "smoke": {
+    "status": "passed",
+    "scope": "Synthetic CPU integration test only; no WeatherBench reproduction",
+    "encoder_updates": 3,
+    "joint_updates": 3,
+    "gate_updates": 4,
+    "evaluation_images": 6,
+    "resume_exact": true,
+    "decomposition_relative_error": 1.0600376314437231e-15,
+    "gate_parameters": 1073,
+    "finite_gate_metrics": true
+  },
+  "real_airnet_cbde_cpu_eval": "passed",
+  "real_airnet_dgrn_cuda": "not run",
+  "weatherbench_training": "not run",
+  "lpips": "not run"
+}
